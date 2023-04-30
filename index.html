@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CodoACodo</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <script src="https://kit.fontawesome.com/8fa71a03bd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./media/codoacodo.png" alt="">
+                <h2>Conf Bs As</h2>
+            </div>
+
+            <button class="navigation-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="navigation-menu">
+                <a class="navigation-menu-item" href="">La conferencia</a>
+                <a href="" class="navigation-menu-item btn_grey">Los oradores</a>
+                <a href="" class="navigation-menu-item btn_grey">El lugar y la fecha</a>
+                <a href="" class="navigation-menu-item btn_grey">Conviértete en orador</a>
+                <a href="" class="navigation-menu-item btn_verde">Comprar tickets</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contenedor-flexbox fondo-main">
+                <!--<img src="./media/hawaii.jpg" alt="imagen_main" class="imagen_main">-->
+                <div></div>
+                <div class="derecha"><!--parte derecha-->
+                    <div class="derecha-main">
+                        <h1>Conf Bs As</h1>
+                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con 
+                            <br>nuestra comunidad el conocimiento y experiencia de los expertos que<br> están creando el futuro de Internet. Ven a conocer a miembros del<br> evento, a otro estudiantes de Codo a Codo y los oradores de primer<br> nivel que tenemos para ti. Te esperamos!
+                        </p>
+                        <a href="" class="enlace-1">Quiero ser orador</a>
+                        <a href="" class="enlace-2">Comprar tickets</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4 class="tituloChico">CONOCE A LOS</h4>
+                <h2 class="tituloGrande">ORADORES</h2>
+
+                <div class="contenedor-flexbox caja">
+
+                    <div class="contenedor-oradores">
+                        <img src="./media/steve.jpg" alt="steve">
+                        <div class="caja1">
+                            <strong class="javascript">JavaScript</strong> <strong class="react">React</strong>
+                            <h3>Steve Jobs</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet aliquid unde ipsa cumque exercitationem aspernatur quia soluta quidem sapiente ea aliquam tempora minima libero quos alias, sunt, iste distinctio autem?</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-oradores">
+                        <img src="./media/bill.jpg" alt="bill">
+                        <div class="caja1">
+                            <strong class="javascript">JavaScript</strong> <strong class="react">React</strong>
+                            <h3>Bill Gates</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia, tempora eum ducimus ullam distinctio dolor corrupti explicabo aliquid modi laudantium exercitationem aut fugiat, ad error odio obcaecati iusto delectus!</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-oradores">
+                        <img src="./media/ada.jpeg" alt="ada">
+                        <div class="caja1">
+                            <strong class="negocios">Negocios</strong>
+                            <strong class="startup">Startups</strong>
+                            <h3>Ada Lovelace</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi eius numquam ipsam esse nisi, autem optio minima. Numquam tempore, accusantium quaerat atque odio corporis! Cumque, saepe minus? Eos, commodi.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="prueba">
+
+                <div class="img_octubre">
+                </div>
+
+                <div class="derecha2">
+                    <h3>Bs As - Octubre</h3>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda ciudad (aproximadamente 600 km² de superficie).</p>
+                    <a href="">Conocé más</a>
+                </div>
+
+            </section>
+
+            <section class="contacto">
+                <h4 class="tituloChico">CONVIÉRTETE EN UN</h4>
+                <h2 class="tituloGrande">ORADOR</h2>
+                <p>Anótate como orador para dar una <u style="text-decoration-style: dotted; color: black;">charla ignite</u>. Cuéntanos de qué quieres hablar!</p>
+                <div class="cajaFormulario">
+                    <form action="">
+                        <div>
+                            <input type="text" name="name" class="name" placeholder="Nombre"/required>
+                            <input type="text" name="apellido" class="lastname" placeholder="Apellido"/required>
+                        </div>
+                        
+                        <textarea name="" rows="4" placeholder="Sobre qué quieres hablar?"/required></textarea>
+                        <p>Recuerda incluir un título para tu charla</p>
+
+                        <button type="submit" class="enviar">Enviar</button>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Preguntas<br>frecuentes</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Conferencias</a></li>
+                    <li><a href="#">Términos y<br>condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

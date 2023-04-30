@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header {
+    background: rgb(53, 58, 64);
+    width: 100%;
+    /*display: flex;*/
+}
+
+header img {
+    height: 55px;
+    align-items: center;
+}
+
+.logo h2 {
+    display: inline;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.logo {
+    color: white;
+    padding: 15px;
+    padding-left: 7rem;
+    display: inline-flex;
+}
+
+header nav {
+    float: right;
+    padding: 30px 100px 25px 0;
+}
+
+header nav a {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    header nav a:hover {
+        color: green;
+        cursor: pointer;
+    }
+
+.btn_grey {
+    color: rgb(143, 142, 142);
+}
+
+.btn_verde {
+    color: green;
+}
+/*------------menu-responsive-------*/
+.navigation-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding:0 20px;    
+    cursor: pointer;
+    align-self: right;
+    display: none;
+
+    margin: 0 0 0 auto;
+}
+        @media (min-width:899px)and (max-width:1112px) {
+            header {
+                display: flex;
+            }
+            .navigation-menu{
+                display: flex;
+            }
+        }
+
+        @media (max-width:898px){
+            header {
+                display: flex;
+                justify-content: space-between;
+
+                margin: 0 auto;
+            }
+            .logo {
+                padding: 20px;
+                padding-left: 3rem;
+            }
+            header img {
+                height: 60px;
+            }
+            .logo h2 {
+                font-size: 20px;
+            }
+
+            .navigation-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(53, 58, 64);
+                position: fixed;
+                left: 0;
+                top: 90px;
+                width: 100%;
+                padding: 20px 0;
+                /*para q deslice el menu en pantalla chica*/
+                height: calc(100% - 60px);
+                overflow-y: auto;
+    
+                left: 100%;
+                transition: left 0.3s;
+            }
+            .navigation-menu-item {
+                line-height: 70px;
+            }
+                .navigation-menu-item:hover {
+                    color: green;
+                }
+
+
+            .navigation-toggle {
+                display: block;
+            }
+
+            .navigation-menu_visible {
+                left: 0;
+            }
+            
+            .navigation-toggle:focus:not(:focus-visible) {
+                outline: none;
+            }
+        }
+/*--------------------------main------------------------*/
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+}
+
+.fondo-main {
+    background-image: url(../media/hawaii.jpg);
+    height: 85vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;    
+    background-color: rgba(55, 59, 59, 0.863);
+    background-blend-mode: soft-light;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+}
+
+.imagen_main {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    /*background-size: cover;*/
+}
+
+.contenedor-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.izq {
+    width: 50%;
+    display: inline-block;
+}
+
+.derecha {
+    width: 50%;
+    display: inline-block;
+}
+
+.derecha-main {
+    margin-right: 15%;
+    text-align: right;
+    padding: 20px 0;
+}
+
+/*-------botones--------*/
+.enlace-1 {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.enlace-2 {
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: pointer;
+}
+    .enlace-1:hover {
+        box-shadow: 0 0 20px black;
+        transition: 0.3s;
+        border-color: white;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+    }
+    .enlace-2:hover {
+        box-shadow: 0 0 20px black;
+        transition: 0.3s;
+        background-color: rgb(2, 92, 2);
+        font-weight: 600;
+    }
+/*-------------------------oradores---------------------*/
+
+.tituloChico {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.tituloGrande {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: .5rem;
+}
+
+.caja {
+    width: 73%;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+}
+
+.caja1 {
+    margin: 0 auto;
+    padding: 4%;
+}
+
+.caja1 h3 {
+    margin-top: .1rem;
+}
+
+.contenedor-oradores{
+    width: 19rem;
+    height: 32rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.contenedor-oradores:hover {
+    box-shadow: 0 0 20px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contenedor-oradores img {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.javascript {
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.react {
+    background-color: aqua;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.negocios {
+    background-color: grey;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.startup {
+    background-color: red;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------bsas octubre---------------*/
+
+.prueba {
+    display: flex;
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img_octubre {
+    width: 50%;
+    height: 420px;
+    display: inline-block;
+    background-image: url(../media/honolulu.jpg);
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.derecha2 {
+    width: 50%;
+    height: 420px;
+    display: inline-block;
+    border: 1px solid white;
+
+    background-color: rgb(65, 70, 70);
+    color: white;
+}
+
+.derecha2 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0 0 0 10px;
+    margin-bottom: 1rem;
+}
+
+.derecha2 p {
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .795rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 1.3em;
+}
+
+.derecha2 a {
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: .795rem;
+
+    margin-left: 10px;
+    padding: 0.5em;
+}
+    .derecha2 a:hover {
+        box-shadow: 0 0 20px black;
+        transition: 0.3s;
+        background-color: black;
+        font-weight:700;
+    }
+/*------------------------formulario--------------------*/
+
+.contacto {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+/*-------------form------------*/
+.cajaFormulario {
+    margin: auto;
+    width: 50%;
+}
+
+.name {
+    float: left;
+    border-radius: 5px;
+    width: 46%;
+    padding: .3em;
+}
+
+.lastname {
+    float: right;
+    border-radius: 5px;
+    width: 46%;
+    padding: .3em;
+}
+
+.cajaFormulario textarea {
+    padding: 10px;
+    border-radius: 5px;
+    width: 96.7%;
+    resize:vertical;
+    min-height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.cajaFormulario p {
+    font-size: .8rem;
+    color: gray;
+    text-align: left;
+    margin-top: .9px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    border-color: green;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+    .enviar:hover{
+        box-shadow: 0 0 20px black;
+        transition: 0.3s;
+        background-color: rgb(3, 170, 3);
+        font-weight:700;
+    }
+
+/*------------main-responsive-------*/
+
+        @media (min-width:899px)and (max-width:1112px){
+/*-----oradores-------*/
+            .caja {
+                width: 90%;
+            }
+            .contenedor-oradores{
+                margin: .7rem;
+            }            
+        }
+
+        @media (max-width:898px){
+
+            /*---main-bsas--------*/
+            .contenedor-flexbox {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .derecha {
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 20%;
+            }
+            /*-------------------*/
+            .caja {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*-----oradores-------*/
+            
+            .contenedor-oradores{
+                margin-bottom: .7rem;
+            } 
+
+/*----bsas-octubre----*/
+            .prueba {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 840px;
+            }
+            .img_octubre {
+                width: 100%;
+                height: 420px;
+            }
+            
+            .derecha2 {
+                width: 100%;
+                height: 420px;
+            }
+            .derecha2 h3 {
+                padding-top: 10%;
+            }
+/*-------contacto------*/
+            .cajaFormulario {
+                margin: auto;
+                width: 80%;
+            }
+        }
+        
+
+/*--------------------------footer----------------------*/
+footer {
+    color: rgb(255,255,255);
+    background-color:  #1c425a;/*para navegadores q no soportan gradient*/
+    background-image: linear-gradient(to right, #1c425a, #3e6faf);
+}
+
+footer nav ul {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+
+    padding: 1.5rem 0;
+}
+footer nav ul li {
+    list-style: none;
+}
+footer nav ul li a {
+    padding: 1px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+/*----footer-responsive----*/
+
+        @media (max-width:898px){
+            footer nav ul{
+                flex-direction: column;
+            }
+            footer nav ul li {
+                padding-top: 10px;
+            }
+        }
