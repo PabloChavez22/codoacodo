@@ -1,9 +1,9 @@
 
 ### Bienvenido al repositorio creado para
-###<  Codo a Codo  />
+### <  Codo a Codo  />
 - Página replicada de la imagen de una página principal con lo visto en clase hasta el momento.
 
-###Contenido
+### Lenguajes de programación
 > Html
 
 >Css
@@ -11,7 +11,7 @@
 >Javascript
 
 
-###Partes
+### Partes
 >Menú
 >+ responsive
 >+ logo Codo a Codo
@@ -29,8 +29,16 @@
 
 >footer
 >+ con 7 links para conectar a otras páginas.
+                          
+----
 
-          
----
+### Página
+>Github pages [click aquí.](https://pablochavez22.github.io/codoacodo/)
+                
+----
 
-###End
+### IMAGES
+![imagen final del front a realizar](https://github.com/PabloChavez22/codoacodo/blob/main/media/final_front_2021.jpg)
+
+
+### End
