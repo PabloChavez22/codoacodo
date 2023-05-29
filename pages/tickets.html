@@ -1,0 +1,136 @@
+<!--Acá html tickets-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodoACodo Tickets</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style_tickets.css">
+
+        <script src="https://kit.fontawesome.com/8fa71a03bd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="logo">
+                <img src="../../media/codoacodo.png" alt="">
+                <h2>Conf Bs As</h2>
+            </div>
+
+            <button class="navigation-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="navigation-menu">
+                <a href="" class="navigation-menu-item btn_grey">La conferencia</a>
+                <a href="" class="navigation-menu-item btn_grey">Los oradores</a>
+                <a href="" class="navigation-menu-item btn_grey">El lugar y la fecha</a>
+                <a href="" class="navigation-menu-item btn_grey">Conviértete en orador</a>
+                <a class="navigation-menu-item btn_verde" href="#">Comprar tickets</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contenedor">
+                <div class="contenedor_descuento" id="cuadro_color1">
+                    <h3>Estudiante</h3>
+                    <p>Tienen un descuento</p>
+                    <h4>80%</h4>
+                    <h5>* presentar documentación</h5>
+                </div>
+                <div class="contenedor_descuento" id="cuadro_color2">
+                    <h3>Trainee</h3>
+                    <p>Tienen un descuento</p>
+                    <h4>50%</h4>
+                    <h5>* presentar documentación</h5>
+                </div>
+                <div class="contenedor_descuento" id="cuadro_color3">
+                    <h3>Junior</h3>
+                    <p>Tienen un descuento</p>
+                    <h4>15%</h4>
+                    <h5>* presentar documentación</h5>
+                </div>
+            </div>
+
+            <div>
+                <form class="formulario" id="formulario1" action="" >
+                        <legend>VENTA</legend>
+
+                        <h1>VALOR DEL TICKET $200</h1>
+
+                        <div>
+                            <div class="names">
+                                <input type="text" name="name"id="name1" class="name1" placeholder="Nombre" maxlength="24"/required>
+                                <input type="text" name="apellido" id ="apellido" class="lastname1" placeholder="Apellido" maxlength="24"/required>
+                            </div>
+
+                            <div class="names">
+                                <input type="email" name="email" id="email" class="email" placeholder="Correo" maxlength="24"/required>
+                            </div>
+
+                            <div>
+                                <div class="names">
+                                    
+                                    <div class="ajust_label"><!--cantidad-->
+                                        <label for="cantidad">Cantidad</label>
+                                        <input type="number" name="cantidad" id="cant_tickets" step="1" placeholder="Cantidad"/required>
+                                    </div>
+                                
+                                    <div class="ajust_label"><!--categoria-->
+                                        <label for="categoria">Categoria</label>
+                                        <select name="categoria" id="seleccion" onchange="ShowSelected();">
+                                            <option value="0">-</option>
+                                            <option value="0.8">Estudiante</option>
+                                            <option value="0.5">Trainee</option>
+                                            <option value="0.15">Junior</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <!-- aca el display -->
+                            <div class="total_pagar">
+                                <p id="total_mostrar">Total a Pagar: $</p>
+                            </div>
+                        </div>
+
+                        <div class="names names1">
+                            <div class="botones_form">
+                                <button type="reset" id="borrar">Borrar</button>
+                            </div>
+                            <div class="botones_form">
+                                <button type="submit" id="resumen">Resumen</button>
+                            </div>
+                        </div>
+                </form>
+                <div id="comprobante" class="ocultar">
+                    <div id="alert_vacio" class="mostrar_comprobante">hola</div>
+                    <button id="posta" class="boton_comprobante" onclick="enviar_formularioConBoton()">Realizar Compra</button>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Preguntas<br>frecuentes</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Conferencias</a></li>
+                    <li><a href="#">Términos y<br>condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </footer>
+        
+        <script src="../../javascript/script.js"></script>
+        <script src="../../javascript/script_tickets.js"></script>
+    </body>
+</html>
