@@ -1,0 +1,260 @@
+/*------Aca css tickets------*/
+/*----------carteleria----------*/
+.contenedor{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_descuento {
+    width: 32%;
+    border: solid 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .contenedor_descuento h3 {
+        padding-top: 3%;
+    }
+    .contenedor_descuento h4 {
+        padding: 2% 0;
+    }
+    .contenedor_descuento h5 {
+        color: gray;
+        padding-bottom: 2%;
+    }
+
+.contenedor div:nth-child(1){ border-color: rgb(158, 193, 204);}
+.contenedor div:nth-child(2){ border-color: rgba(173, 216, 230);}
+.contenedor div:nth-child(3){ border-color: rgba(255, 255, 0);}
+
+
+.contenedor div:nth-child(1):hover {
+    background-color: rgba(158, 193, 204, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contenedor div:nth-child(2):hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contenedor div:nth-child(3):hover {
+    background-color: rgba(255, 255, 0, 0.4);
+    transition: 0.3s;
+    cursor: pointer;
+}
+        /*media responsive*/
+        @media (max-width:898px) {
+            .contenedor{
+                width: 90%;
+                flex-direction: column;
+                margin-bottom: 10px;
+                align-items: center;
+            }           
+            .contenedor_descuento {
+                width: 90%;
+            }     
+            .contenedor_descuento h3{
+                font-size: 2em;
+            }
+            .contenedor_descuento h4 {
+                font-size: 2em;
+            }
+            .contenedor_descuento h5 {
+                font-size: 1em;
+            }
+            .contenedor_descuento p {
+                font-size: 1.3em;
+            }
+        }
+
+/*----------formulario----------*/
+.formulario {
+    width: 60%;
+    margin: auto;
+
+    margin-bottom: 20px;
+}
+    .formulario legend {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .formulario h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.names {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+.name1, .lastname1, .email{
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 15px 0 10px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.email {
+    width: 100%;
+}
+
+.ajust_label {
+    /*position:static;
+    display: flexbox;*/
+    display: contents;
+    padding: 0 1px 0 1px;
+    display:block;
+    overflow-x: hidden;
+    width: 49%;
+    /*height:max-content;*/
+}
+
+.ajust_label select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 0 10px 15px;
+    border-radius: 5px;
+}
+.ajust_label input {
+    display: flex;
+    width: 100% ;
+    box-sizing: border-box;/*evito el desborde en caja*/
+    margin-bottom: 20px;
+    padding: 15px 0 10px 15px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    font-size: inherit;
+}
+.ajust_label label {
+    display:flex;
+    padding: 0 0 15px 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+}
+
+/*--------------------*/
+
+.total_pagar {
+    border: solid 2px #b6d4fe;
+    border-radius: 5px;
+    background-color: #cfe2ff;
+    color: #084298;
+    padding: 7px 0 7px 20px;
+    margin: 3% 0 6%;
+}
+    .total_pagar p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:600;
+    }
+
+/*-------------------*/
+.botones_form {
+    width: 49%;
+}
+    .botones_form button:hover{
+        box-shadow: 0 0 5px 3px rgb(12,34,56);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+/*------------comprobante-----------*/
+
+.mostrar_comprobante {
+    background-color: rgb(211, 209, 209);
+    box-shadow: 0 0 5px 0 rgb(12,34,56);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    white-space: pre;
+    width: 300px;
+
+    padding: 0.5% 0 0 0.7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height:1.5em;
+    word-wrap: break-word;/*no funciona con js*/
+}
+
+.boton_comprobante {
+    background-color: rgb(211, 209, 209);
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5% .5%;
+    align-items: center;
+}
+    .boton_comprobante:hover{
+        background-color: rgb(50, 148, 50);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+.ocultar{
+    display: none;
+}
+
+#comprobante{
+    word-wrap: break-word;/*para que no salga del contenedor*/
+    -ms-word-break: break-all;
+     word-break: break-all;
+
+    -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;/*pone guion al partir palabra*/
+}
+    /*media responsive*/
+    @media(min-width:899px){
+        .name1{
+            margin-right: 2px;
+        }
+        .lastname1{
+            margin-left: 2px;
+        }
+    }
+    @media (max-width:898px){
+        .names {
+            display: flex;
+            flex-direction: column;
+        }/*va para todos*/
+        .name1, .lastname1, .email{
+            width:auto;
+        }
+        .ajust_label {
+            display:contents;
+            width: auto;
+        }
+        .ajust_label input {
+            width: auto;
+        }
+        .names1 {
+            align-items: center;
+        }
+        .botones_form {
+            width: 50%;
+            display: flex;
+            flex-direction:column;
+        }
+        .botones_form button {
+            margin-bottom: 10px;
+        }
+    }
+/*---------------*/
